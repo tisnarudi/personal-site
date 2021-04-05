@@ -1,0 +1,144 @@
+  :root {
+    --body-bg-color: #f3f3f3;
+    --header-bg-color: #444444;
+    --header-text-color: #e4e4e4;
+    --navbar-bg-color: #444444;
+    --navbar-text-color: #e4e4e4;
+    --navbar-text-color-focus: #ffffff;
+    --main-bg-color: #f3f3f3;
+    --section-text-color: #121212;
+    --footer-bg-color: #444444;
+    --footer-text-color: #e4e4e4;
+  }
+
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  article,
+  footer,
+  header,
+  main,
+  nav,
+  section {
+    display: block
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: calc(0.125vw + 1rem);
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  header,
+  footer {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    padding: 96px 0;
+    overflow: hidden;
+  }
+
+  nav {
+    background-color: var(--navbar-bg-color);
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0.25rem;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--navbar-text-color);
+    font-size: 1.125rem;
+    padding: 1rem 0.5rem;
+    display: inline-block;
+  }
+
+  nav ul li a:focus {
+    outline: none;
+  }
+
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: var(--navbar-text-color-focus);
+  }
+
+  main {
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: var(--main-bg-color);
+  }
+
+  main:focus {
+    outline: none;
+  }
+
+  section {
+    padding: 1rem;
+    max-width: 68ch;
+    margin: 0 auto;
+    color: var(--section-text-color);
+  }
+
+  section a:link, section a:visited {
+	color:blue;
+  }
+  
+  footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 0.125rem 0;
+    margin-top: auto;
+  }	
