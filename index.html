@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="description" content="Onepage website photo gallery by Tisna Rudi"> 
+	<title>Onepage website photo gallery</title>
+	<link rel="preload" as="image" href="images/home-header.jpg">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico"> 
+</head>
+
+<body>
+	<header id="top">
+		<h1>Tisna Rudi</h1>
+	</header>
+
+	<nav class="sticky" role="navigation">
+		<ul>
+			<li class="home active"><a onclick="scrollSmoothTo('home')">Home</a></li>
+			<li class="about"><a onclick="scrollSmoothTo('about')">About</a></li>
+			<li class="gallery"><a onclick="scrollSmoothTo('gallery')">Gallery</a></li>
+			<li class="contact"><a onclick="scrollSmoothTo('contact')">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="home">
+			<div class="caption">
+				<span class="border">Photo Gallery</span>
+			</div>
+		</section>
+
+		<section id="about">
+			<h1>About</h1>
+			<div class="flex-about">
+				<img src="images/profil.jpg" class="profile" alt="Tisna Rudi">
+				<h3>Hi, i'am Tisna Rudi</h3>
+				<p>Web Developer | Photographer</p>
+				<p>
+					<a href="https://twitter.com/trisnya11"><img src="images/Twitter.png" class="social-media" alt="Twitter icon"></a>		
+					<a href="https://github.com/tisnarudi"><img src="images/Github.png" class="social-media" alt="GitHub icon"></a>
+					<a href="https://bigloveadagio.wordpress.com/"><img src="images/Wordpress.png" class="social-media" alt="Wordpress logo"></a>
+				</p>
+				<p>Onepage website with a simple photo gallery.</p>
+			</div>		
+		</section>
+
+		<section id="gallery">
+			<h1>Photo Gallery</h1>
+			<p>Photograper Tisna Rudi</p>	
+
+			<div class="flex-container">
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/konstruksi-gedung.jpg">	
+						<img src="images/konstruksi-gedung.jpg" alt="Sunset">
+						</a>
+						<figcaption>Sunset</figcaption>
+					</figure>			
+				</div>
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/crescent.jpg">		
+						<img src="images/crescent.jpg" alt="Crescent moon">
+						</a>
+						<figcaption>Crescent moon</figcaption>
+					</figure>					
+				</div>
+				<div class="third-column">
+					<figure>
+					<a target="_blank" href="images/balon-gas.jpg">		
+					<img src="images/balon-gas.jpg" alt="Hot air ballon">
+					</a>
+					<figcaption>Hot air ballon</figcaption>
+					</figure>		
+				</div>		
+			</div>
+
+			<div class="flex-container">
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/blood-moon.jpg">
+						<img src="images/blood-moon.jpg" alt="Meteor shower">
+						</a>	
+						<figcaption>Meteor shower</figcaption>
+					</figure>				
+				</div>
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/terjun-payung.jpg">		
+						<img src="images/terjun-payung.jpg" alt="Parachute"> 
+						</a>  
+						<figcaption>Parachute</figcaption>
+					</figure>			
+				</div>
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/menara.jpg">		
+						<img src="images/menara.jpg" alt="Mesjid">
+						</a>
+						<figcaption>Mosque tower</figcaption>
+					</figure>	
+				</div>							
+			</div>
+
+			<div class="flex-container">
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/koreografi-kembang-api.jpg">
+						<img src="images/koreografi-kembang-api.jpg" alt="Fireworks choreography">
+						</a>	
+						<figcaption>Fireworks choreography</figcaption>
+					</figure>				
+				</div>
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/floating-market-lembang.jpg">		
+						<img src="images/floating-market-lembang.jpg" alt="Floating market Lembang"> 
+						</a>  
+						<figcaption>Lembang</figcaption>
+					</figure>			
+				</div>
+				<div class="third-column">
+					<figure>
+						<a target="_blank" href="images/sepeda.jpg">		
+						<img src="images/sepeda.jpg" alt="Colorful bicycles">
+						</a>
+						<figcaption>Colorful bicycles</figcaption>
+					</figure>	
+				</div>							
+			</div>				
+		</section>
+
+		<section id="contact" class="bottom-box">
+			<h1>Contact</h1>
+			<p>Bandung, West Java. Indonesia</p>
+			<p><a href="mailto:bandunglokalbisnis@gmail.com">Send email</a></p>	
+			<div id="bottom">
+				<a onclick="scrollSmoothTo('top')" title="Scroll to top"><mark><i class="up"></i></mark></a>
+			</div>		   
+		</section>
+	</main>
+
+	<footer>
+		2023 Tisna Rudi. Code are Creative Commons. Photos are property of their respective owners.
+	</footer>
+
+<script src="js/index.js"></script>
+  
+</body></html>
