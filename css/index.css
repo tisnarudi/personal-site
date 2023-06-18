@@ -1,0 +1,310 @@
+main, section, footer {display: block;}
+
+body::after {
+position: absolute;
+left: -9999px;
+visibility: hidden;
+width:0; height:0; 
+overflow:hidden; 
+content: url(../images/profil.jpg) url(../images/konstruksi-gedung.jpg) url(../images/crescent.jpg) url(../images/balon-gas.jpg) url(../images/blood-moon.jpg) url(../images/terjun-payung.jpg) url(../images/menara.jpg) url(../images/koreografi-kembang-api.jpg) url(../images/floating-market-lembang.jpg) url(../images/sepeda.jpg);    
+}
+
+body {
+font-family: Roboto, Helvetica, Arial, sans-serif;
+font-size: 1.125rem;
+min-height:100vh;
+margin:0;
+padding:0;
+line-height: 1.5;
+display: -ms-flexbox; /* IE10 */
+display:flex;
+flex-direction:column; 
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+
+h1 {
+font-size: 2rem;
+margin: .5em 0;
+}
+
+h2 {
+font-size: 1.5rem;
+margin: .25em 0;
+}
+
+h3 {
+font-size: 1.25rem;
+margin: .25em 0;
+}
+
+h4 {
+font-size: 1.25rem;
+margin: .25em 0;
+}
+
+p {
+margin: .5em 0;
+}
+
+h1, h2, h3, h4. p {
+word-break: break-word;
+}
+
+ul, ol {
+margin: 0;
+padding: 0;
+}
+
+li {
+list-style-type: none;
+}
+
+img {
+max-width:100%;
+height:auto;
+display:block;
+border-style: none;
+}
+
+header {
+background-color: #f1f1f1;
+padding: 0;
+text-align: center;
+}
+
+.caption {
+position: absolute;
+left: 0;
+top: 65%;
+width: 100%;
+text-align: center;
+}
+
+.caption span.border {
+background: rgb(0, 0, 0); 
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1;
+padding: 8px;
+font-size: 2rem;
+line-height:1.7;
+letter-spacing: 4px;
+}
+
+nav {
+background: #555;
+text-align: center;
+padding: 6px; 
+z-index: 9;
+}
+
+nav li {
+display: inline-block;
+list-style-type: none;
+}
+
+nav ul li {
+transition: all .3s;
+position: relative;
+}
+
+nav ul li a {
+font-size: 16px;
+color: #f1f1f1; 
+cursor: pointer;  
+padding: 8px;
+}
+
+nav ul li.active::before  {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+height: 0;
+width: 0;
+z-index: 1;
+border-bottom: 5px solid white;
+animation: grow .3s linear;
+animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+100% {
+width: 100%;
+}
+}
+
+nav ul li.active a {
+color: white;
+}
+
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+
+section {
+height: auto;
+min-height: 100vh;
+background-color: #eee;
+}
+
+#about, #gallery, #contact {
+padding-top: 3em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+margin: 0;
+text-align: center; 
+}
+
+#home {
+background-image: url("../images/home-header.jpg");
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;  
+}
+
+.flex-about {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.flex-container {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.half-column {
+padding: 0;
+margin: .5em;
+-ms-flex: 50%; /* IE10 */
+flex: 50%;
+text-align: left;
+}
+
+.third-column {
+padding: 0;
+margin: .5em; 
+-ms-flex: 30%; /* IE10 */
+flex: 30%; 
+}
+
+.profile {
+border-radius: 50%;
+}
+
+.center-image {
+display:block;
+padding: .5em;
+margin-left: auto;
+margin-right: auto;
+}
+
+figure {
+display: block;
+background-color: white;
+padding: 12px;
+margin: 0;
+}
+
+figcaption {
+display: block;
+font-size: 1rem;
+margin-top: 12px;
+padding: 0;
+}
+
+.social-media {
+display: inline-block;
+margin-right:0.25em;	
+}
+
+.bottom-box {
+position: relative;
+}
+
+mark {
+float: right;
+padding: 5px 12px 0 12px;
+background-color: #6c63ff;
+border: none;
+outline: none;
+border-radius: 6px;
+text-align: center;
+cursor: pointer;
+color: white;
+}
+
+#top {
+width: 100%;
+background-color: #f1f1f1;
+color: #444;
+text-align: center;
+}
+
+#bottom {
+position: absolute;
+bottom: 1em;
+right: 1em;
+}
+  
+i {
+border: solid white;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 5px;
+}
+
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+footer{
+margin-top: auto; 
+font-size:0.75rem;
+text-align:center;
+padding: 2em 1.5em;
+background-color:#444444;
+color:#e4e4e4;
+}	
+
+/* mobile first design */
+@media screen and (min-width: 600px) {
+.flex-container {
+flex-direction: row;
+width: 90%;
+margin: 0 auto;
+}
+
+body {
+font-size: 1.25rem; 
+}
+
+h3 {
+font-size: 1.4rem;  
+} 
+
+nav ul li a {
+font-size: 1.25rem;
+}
+
+.caption {
+top: 70%;
+}
+  
+footer {
+font-size: 1rem;
+}  
+}
